@@ -42,7 +42,7 @@ class User {
             throw error;
         }
     }
-    
+
     // Method to compare provided password with stored hashed password
     async comparePassword(candidatePassword) {
         return await bcrypt.compare(candidatePassword, this.password);
